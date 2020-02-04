@@ -1,0 +1,53 @@
+{
+  "groups": [
+    {
+      "name": "jwt.config",
+      "type": "br.com.course.core.property.JWTConfiguration",
+      "sourceType": "br.com.course.core.property.JWTConfiguration"
+    },
+    {
+      "name": "jwt.config.header",
+      "type": "br.com.course.core.property.JWTConfiguration$Header",
+      "sourceType": "br.com.course.core.property.JWTConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwt.config.expiration",
+      "type": "java.lang.Integer",
+      "sourceType": "br.com.course.core.property.JWTConfiguration",
+      "defaultValue": 3600
+    },
+    {
+      "name": "jwt.config.header.name",
+      "type": "java.lang.String",
+      "sourceType": "br.com.course.core.property.JWTConfiguration$Header",
+      "defaultValue": "Authorization"
+    },
+    {
+      "name": "jwt.config.header.prefix",
+      "type": "java.lang.String",
+      "sourceType": "br.com.course.core.property.JWTConfiguration$Header",
+      "defaultValue": "Bearer"
+    },
+    {
+      "name": "jwt.config.login-url",
+      "type": "java.lang.String",
+      "sourceType": "br.com.course.core.property.JWTConfiguration",
+      "defaultValue": "\/login\/**"
+    },
+    {
+      "name": "jwt.config.private-key",
+      "type": "java.lang.String",
+      "sourceType": "br.com.course.core.property.JWTConfiguration",
+      "defaultValue": "uATrOX72VlgPFFwQO0RlT6eIDnhk4VjI"
+    },
+    {
+      "name": "jwt.config.type",
+      "type": "java.lang.String",
+      "sourceType": "br.com.course.core.property.JWTConfiguration",
+      "defaultValue": "encrypted"
+    }
+  ],
+  "hints": []
+}

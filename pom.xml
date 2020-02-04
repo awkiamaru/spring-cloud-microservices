@@ -15,6 +15,7 @@
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
+        <nimbus-jose.version>7.0</nimbus-jose.version>
     </properties>
     <modules>
         <module>
@@ -23,6 +24,11 @@
         <module>core</module>
     </modules>
     <dependencies>
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>${nimbus-jose.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

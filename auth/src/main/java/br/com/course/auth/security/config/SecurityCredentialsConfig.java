@@ -1,5 +1,6 @@
 package br.com.course.auth.security.config;
 
+import br.com.course.auth.security.filter.JWTUserAndPasswordAuthFilter;
 import br.com.course.core.property.JWTConfiguration;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +41,7 @@ public class SecurityCredentialsConfig extends WebSecurityConfigurerAdapter {
                     .authenticationEntryPoint((httpServletRequest, httpServletResponse, e)
                                 -> httpServletResponse.sendError(HttpServletResponse.SC_UNAUTHORIZED))
                 .and()
-                    .addFilter(new UsernamePasswordAuthenticationFilter())
+                    .addFilter(new JWTUserAndPasswordAuthFilter(authenticationManager(),jwtConfiguration))
                         .authorizeRequests()
                             .antMatchers(jwtConfiguration.getLoginUrl()).permitAll()
                             .antMatchers("course/admin/**").hasRole("ADMIN")
