@@ -1,4 +1,0 @@
-br/com/course/core/model/Course.class
-br/com/course/core/model/AbstractEntity.class
-br/com/course/core/repository/CourseRepository.class
-br/com/course/core/model/Course$CourseBuilder.class

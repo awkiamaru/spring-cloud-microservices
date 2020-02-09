@@ -28,7 +28,7 @@
       "name": "jwt.config.header.prefix",
       "type": "java.lang.String",
       "sourceType": "br.com.course.core.property.JWTConfiguration$Header",
-      "defaultValue": "Bearer"
+      "defaultValue": "Bearer "
     },
     {
       "name": "jwt.config.login-url",
@@ -40,7 +40,7 @@
       "name": "jwt.config.private-key",
       "type": "java.lang.String",
       "sourceType": "br.com.course.core.property.JWTConfiguration",
-      "defaultValue": "uATrOX72VlgPFFwQO0RlT6eIDnhk4VjI"
+      "defaultValue": "qxBEEQv7E8aviX1KUcdOiF5ve5COUPAr"
     },
     {
       "name": "jwt.config.type",
